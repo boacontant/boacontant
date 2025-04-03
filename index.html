@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of America - Secure Banking</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: #003366; /* Dark Blue */
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: #004488; /* Medium Blue */
+            color: white;
+        }
+        .login-box {
+            background: #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+        input {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border: 1px solid #ccc;
+            color: black;
+        }
+        button {
+            padding: 10px;
+            background: #cc0000; /* Red */
+            border: none;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background: #990000;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            background: #f8f9fa;
+        }
+        .feature-box {
+            text-align: center;
+            max-width: 250px;
+            padding: 20px;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #003366;
+            color: white;
+            margin-top: 20px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div><h2>BANK OF AMERICA<img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="American Flag" width="60" height="50" style="margin-left: 10px; vertical-align: middle;"></h2></div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+    
+    <div class="hero">
+        <h1>Welcome to Bank of America</h1>
+        <p>Your trusted partner in financial security and growth.</p>
+    </div>
+    
+    <div class="login-box">
+        <h2>Secure Login</h2>
+        <form action="boaActPage.html" method="get">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <div class="features">
+        <div class="feature-box">
+            <h3>Online Banking</h3>
+            <p>Manage your accounts and transactions securely from anywhere.</p>
+        </div>
+        <div class="feature-box">
+            <h3>24/7 Support</h3>
+            <p>Our team is available around the clock to assist you.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Secure Transactions</h3>
+            <p>Advanced encryption to keep your data safe.</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p><strong>Locations | Contact | Privacy & Security | Online Banking Service</strong></p>
+        <p><strong>Connect with us</strong></p>
+        <p>Bank of America, N.A<img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="American Flag" width="30" height="20" style="margin-left: 10px; vertical-align: middle;">  Member FDIC. Equal Housing Lender</p>
+        <p>&copy; 2025 Bank of America Corporation. All rights reserved.</p>
+        <p>Patent: <a href="https://patents.bankofamerica.com" target="_blank" style="color: white;">patents.bankofamerica.com</a></p>
+    </div>
+</body>
+</html>
