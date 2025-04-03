@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Dashboard - BANK OF AMERICA</title>
+    <style>
+        /* General styling for the page */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: black;
+        }
+        /* Navigation bar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: #003366;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .logout-button {
+            padding: 8px 16px;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .logout-button:hover {
+            background: darkred;
+        }
+        /* Main dashboard container */
+        .dashboard {
+            text-align: center;
+            padding: 50px;
+            background: #ffffff;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        /* Account balance styling */
+        .balance {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        /* Styling for transaction history section */
+        .transactions {
+            text-align: left;
+            margin-top: 30px;
+        }
+        .transactions table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .transactions th, .transactions td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .transactions th {
+            background: #003366;
+            color: white;
+        }
+    </style>
+    <script>
+        function logout() {
+            document.body.innerHTML = `
+                <div style="text-align: center; margin-top: 20%; font-family: Arial, sans-serif;">
+                    <h1>Thank you for banking with us</h1>
+                    <p>Please wait...</p>
+                </div>`;
+            
+            setTimeout(() => {
+                window.location.href = "index.html"; // Redirects back to the homepage
+            }, 3000);
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation bar section -->
+    <div class="navbar">
+        <div><h2>BANK OF AMERICA<img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="American Flag" width="60" height="50" style="margin-left: 10px; vertical-align: middle;"></h2></div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Accounts</a>
+            <a href="#">Transfers</a>
+            <button class="logout-button" onclick="logout()">Logout</button>
+        </div>
+    </div>
+    
+    <!-- Dashboard section showing account balance -->
+    <div class="dashboard">
+        <h1>Welcome, JIM WALKER</h1>
+        <p class="balance">Account Balance: <strong>$2,350,620.05</strong></p>
+        
+        <!-- Recent transactions table -->
+        <div class="transactions">
+            <h3>Recent Transactions</h3>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                </tr>
+                <tr><td>04/01/2025</td><td>Deposit</td><td>$50,000.00</td></tr>
+                <tr><td>03/28/2025</td><td>ATM Withdrawal</td><td>-$2000.00</td></tr>
+                <tr><td>03/25/2025</td><td>Online Transfer</td><td>-$5,000.00</td></tr>
+                <tr><td>03/21/2025</td><td>Flight Ticket</td><td>-$4650.00</td></tr>
+                <tr><td>03/20/2025</td><td>Bill Payment</td><td>-$1,200.00</td></tr>
+                <tr><td>03/15/2025</td><td>Stipend Credit</td><td>$15,000.00</td></tr>
+                <tr><td>03/10/2025</td><td>Grocery Shopping</td><td>-$300.00</td></tr>
+                <tr><td>03/05/2025</td><td>Restaurant</td><td>-$350.00</td></tr>
+                <tr><td>03/01/2025</td><td>Investment Return</td><td>$15,500.00</td></tr>
+                <tr><td>02/25/2025</td><td>Utility Bill</td><td>-$1,150.00</td></tr>
+                <tr><td>02/20/2025</td><td>Subscription Service</td><td>-$200.00</td></tr>
+                <tr><td>02/10/2025</td><td>School fees Payment</td><td>-$34,000.00</td></tr>
+                <tr><td>02/05/2025</td><td>Stock Purchase</td><td>-$4,500.00</td></tr>
+                <tr><td>02/01/2025</td><td>Insurance Premium</td><td>-$800.00</td></tr>
+                <tr><td>01/28/2025</td><td>Gym Membership</td><td>-$500.00</td></tr>
+                <tr><td>01/25/2025</td><td>Freelance Income</td><td>$3,200.00</td></tr>
+                <tr><td>01/20/2025</td><td>Bonus</td><td>$7,500.00</td></tr>
+                <tr><td>01/15/2025</td><td>ATM Withdrawal</td><td>-$2500.00</td></tr>
+                <tr><td>01/10/2025</td><td>Online Purchase</td><td>-$1,900.00</td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
